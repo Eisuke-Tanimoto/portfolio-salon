@@ -1,0 +1,11 @@
+@import 'style/mixin.scss';
+@import 'style/_variables.scss';
+@import 'breakpoint/_base.scss';
+
+@media screen and (min-width: 640px) {
+  @import 'breakpoint/_640up.scss';
+}
+
+@media screen and(min-width: 900px) {
+  @import 'breakpoint/_800up.scss';
+}

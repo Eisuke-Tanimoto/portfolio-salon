@@ -1,0 +1,268 @@
+// ************************************
+
+// タブレット
+
+// ************************************
+
+.header {
+  position: relative;
+}
+
+main {
+  padding-top: 0;
+}
+
+.hero {
+  margin-bottom: 100px;
+}
+
+.header__inner {
+  display: none;
+}
+
+.reserve-form__btn {
+  display: none;
+  visibility: visible;
+}
+
+.concept {
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 0;
+
+  &__inner {
+    position: relative;
+
+  }
+
+  &__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+
+    & > a {
+      text-align: right;
+    }
+
+  }
+
+  &__title {
+    width: 100%;
+    padding: 10px 40px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 5px;
+      left: -5px;
+      content: url(../images/scissors.png);
+      transform: scale(0.12);
+      background-size: contain;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 130%;
+      height: 2px;
+      border-bottom: dotted 2px $cBlack;
+
+    }
+  }
+
+  &__text {
+    line-height: 32px;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    right: 0;
+    width: 60%;
+    height: 400px;
+  }
+  
+  &__img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    object-position: 0% 30%;
+  }
+ }
+
+ .cut-illust {
+   position: absolute;
+   width: 150px;
+   bottom: 10px;
+  left: -40px;
+ }
+
+.salon {
+  position: relative;
+
+  &__gallery {
+    display: none;
+  }
+
+  &__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__slider {
+    width: 60%;
+  }
+
+  &__staff-gallery {
+    width: 34%;
+  }
+  
+  &__staff {
+    width: 100%;
+  }
+  
+  &__text {
+    width: 100%;
+    padding: 0px;
+    top: 70px;
+    
+    & > span {
+      left: 0 ;
+      font-size: 0.8rem;
+      padding: 0 0 0 20px;
+      border-left: solid 4px $cLBlue;
+    }
+
+    & > a {
+      display: inline-block;
+      right: 0;
+    }
+  }
+ }
+
+ .news {
+   &__inner {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+   }
+
+   &__img {
+     width: 45%;
+     height: 500px;
+     border-radius: 10px;
+     background-size: cover;
+     background-attachment: scroll;
+     background-position: center center;
+     box-shadow: 8px 8px 0 $cLBlue;
+   }
+
+   &__container {
+     width: 47%;
+    margin: 0;
+   }
+ }
+
+.menu__container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__cut,
+.menu__color {
+  width: 47%;
+}
+
+.reserve {
+  &__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 45%;
+    text-align: left;
+
+    & > div {
+      text-align: center;
+    }
+  }
+
+  &__calendar {
+    width: 48%;
+  }
+}
+
+.reserve__calendar {
+  display: block;
+}
+
+.acsess {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__img {
+    display: block;
+    width: 44%;
+    height: 0;
+    padding-bottom: 40%;
+    background-size: cover;
+    border-radius: 10px;
+
+    &__sp {
+      display: none;
+    }
+  }
+
+  &__info {
+    width: 50%;
+  }
+
+  &__map {
+    & > iframe {
+      max-height: 400px;
+    }
+  }
+}
+
+.footer {
+  &__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  &__logo {
+    width: 50%;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  &__info {
+    margin-top: 0;
+    & > nav {
+      justify-content: flex-end;
+
+      & > li {
+        & > a {
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
