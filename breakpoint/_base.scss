@@ -1015,9 +1015,7 @@ main {
 
   &__map {
     @extend .content-width;
-    height: 0;
-    padding-bottom: 30%;
-    max-height: 400px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     @extend .mb-md;
