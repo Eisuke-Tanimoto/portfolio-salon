@@ -1060,11 +1060,10 @@ main {
 }
 
 .acsess__map {
-  height: 0;
-  padding-bottom: 40%;
+  height: 300px;
   position: relative;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .acsess__map > iframe {
