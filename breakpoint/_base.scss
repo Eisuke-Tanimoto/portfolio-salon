@@ -1016,11 +1016,12 @@ main {
   &__map {
     @extend .content-width;
     height: 0;
-    padding-bottom: 40%;
+    padding-bottom: 30%;
+    max-height: 400px;
     position: relative;
     overflow: hidden;
     @extend .mb-md;
-    margin-top: 50px;
+    margin-top: 80px;
 
     & > iframe {
       position: absolute;
@@ -1033,7 +1034,6 @@ main {
 }
 
 .link-icon {
-
   text-align: center;
 
   & > a {
